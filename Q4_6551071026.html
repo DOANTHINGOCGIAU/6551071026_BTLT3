@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>User Information Form</title>
+</head>
+<body>
+    <h1>User Information</h1>
+    <form action="" method="get">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>Age: 
+            <input type="radio" id="age1" name="age" value="<18" required>
+            <label for="age1">&lt; 18</label>
+
+            <input type="radio" id="age2" name="age" value="19-35">
+            <label for="age2">19-35</label>
+
+            <input type="radio" id="age3" name="age" value="36-48">
+            <label for="age3">19-48</label>
+
+            <input type="radio" id="age4" name="age" value=">49">
+            <label for="age4">&gt; 49</label>
+        </p>
+
+        <p>
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" name="profession">
+        </p>
+
+        <p>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="japan">Japan</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="interests">Interests: </label>
+            <select style="vertical-align: middle;" id="interests" name="interests[]" multiple size="2">
+                <option value="reading">Reading</option>
+                <option value="sports">Sports</option>
+                <option value="music">Music</option>
+                <option value="travel">Travel</option>
+                <option value="coding">Coding</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="discovery">How did you find out about this site?</label><br>
+            <textarea id="discovery" name="discovery" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>
